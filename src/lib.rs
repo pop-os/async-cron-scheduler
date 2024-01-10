@@ -39,13 +39,13 @@
 //!     // A future which gradually drops jobs from the scheduler.
 //!     let dropper = async move {
 //!         Timer::after(Duration::from_secs(7)).await;
-//!         scheduler.remove(fizz_id);
+//!         scheduler.remove(fizz_id).await;
 //!         println!("Fizz gone");
 //!         Timer::after(Duration::from_secs(5)).await;
-//!         scheduler.remove(buzz_id);
+//!         scheduler.remove(buzz_id).await;
 //!         println!("Buzz gone");
 //!         Timer::after(Duration::from_secs(1)).await;
-//!         scheduler.remove(bazz_id);
+//!         scheduler.remove(bazz_id).await;
 //!         println!("Bazz gone");
 //!
 //!         // `scheduler` is dropped here, which causes the sched_service to end.

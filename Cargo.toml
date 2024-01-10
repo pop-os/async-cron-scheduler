@@ -2,7 +2,7 @@
 name = "async-cron-scheduler"
 description = "Runtime-agnostic async task scheduler with cron expression support"
 repository = "https://github.com/pop-os/async-cron-scheduler"
-version = "2.0.0"
+version = "2.0.1"
 license = "MPL-2.0"
 authors = ["Michael Aaron Murphy <michael@mmurphy.dev>"]
 categories = [ "asynchronous", "date-and-time" ]
