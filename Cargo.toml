@@ -1,0 +1,24 @@
+[package]
+name = "async-cron-scheduler"
+description = "Runtime-agnostic async task scheduler with cron expression support"
+repository = "https://github.com/pop-os/async-cron-scheduler"
+version = "2.0.0"
+license = "MPL-2.0"
+authors = ["Michael Aaron Murphy <michael@mmurphy.dev>"]
+categories = [ "asynchronous", "date-and-time" ]
+keywords = ["cron", "job", "scheduler", "tokio", "smol"]
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.31"
+cron = "0.12.0"
+slotmap = "1.0.7"
+futures = "0.3.30"
+tachyonix = "0.2.1"
+tracing = { version = "0.1.40", optional = true }
+
+[features]
+logging = ["dep:tracing"]
+
+[dev-dependencies]
+smol = "2.0.0"
